@@ -66,23 +66,23 @@ String getChoice2(){
     switch (_storyNumber){
       case 0:
         if(choiceNumber==1){
-          _storyNumber==2;
+          _storyNumber=2;
         }else if(choiceNumber==2){
-          _storyNumber==1;
+          _storyNumber=1;
         }
         break;
       case 1:
         if(choiceNumber==1){
-          _storyNumber==2;
+          _storyNumber=2;
         }else if(choiceNumber==2){
-          _storyNumber==3;
+          _storyNumber=3;
         }
         break;
       case 2:
         if(choiceNumber==1){
-          _storyNumber==5;
+          _storyNumber=5;
         }else if(choiceNumber==2){
-          _storyNumber==4;
+          _storyNumber=4;
         }
         break;
       case 3:
@@ -103,14 +103,15 @@ String getChoice2(){
     }
   }
   void restart(){
-    _storyNumber==0;
+    _storyNumber=0;
   }
 
   bool buttonShouldBeVisible(){
     if(_storyNumber<3){
       return true;
-    }else
+    }else {
       return false;
+    }
   }
 
 }
